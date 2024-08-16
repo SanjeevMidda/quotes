@@ -1,0 +1,62 @@
+* {
+  margin: 0px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  height: 100dvh;
+  align-items: center;
+}
+
+.mainContainer {
+  overflow: hidden;
+}
+
+.quoteContainer {
+  display: flex;
+  /* flex-wrap: wrap; */
+  width: fit-content;
+  animation: animateQuotes 40s linear infinite;
+}
+
+.quote {
+  border: 1px solid rgb(185, 185, 185);
+  border-radius: 20px;
+  width: 300px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(113, 37, 178);
+}
+
+h5 {
+  font-weight: 600;
+  transform: translateY(30px);
+}
+
+@keyframes animateQuotes {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes animateQuotesReverse {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.quoteContainer2 {
+  animation: animateQuotesReverse 40s linear infinite;
+}
