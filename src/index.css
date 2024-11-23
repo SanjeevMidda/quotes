@@ -7,7 +7,7 @@
 .App {
   display: flex;
   justify-content: center;
-  height: 100dvh;
+  height: 200dvh;
   align-items: center;
 }
 
